@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestors</title>
+    <style>
+      body {
+          margin: 20px;
+          background-color: #fdf6e3;
+      }
+      h1 {
+          color: #8b4c3e;
+      }
+      .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 30px;
+          margin: 20px 0;
+      }
+      .gallery-item {
+          text-align: center;
+          max-width: 320px;
+      }
+      .gallery-item a {
+          text-decoration: none;
+      }
+      .gallery-item img {
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 8px;
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25),
+                      0 4px 8px rgba(0, 0, 0, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .gallery-item img:hover {
+          transform: translateY(-5px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3),
+                      0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+      .gallery-item h3 {
+          margin: 12px 0 8px 0;
+          color: #5c3a1f;
+          font-size: 1.1em;
+      }
+      .footer {
+          margin-top: 40px;
+          text-align: center;
+          color: #666;
+          font-size: 0.9em;
+      }      
+
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">← Return to Main Page</a></p>
+    <center>
+    <h1>Ancestors</h1>
+    </center>
+            <!-- First Row -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="1979_Angela_Dawn_Schneider_Ancestors.html">
+                <img src="ancestors.jpg" alt="Angie's Ancestors" width="300" height="200">
+            </a>
+            <h3>Angie's Ancestors</h3>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="1979_Andrew_James_Moad_Ancestors.html">
+                <img src="ancestors.jpg" alt="Andy's Ancestors" width="300" height="200">
+            </a>
+            <h3>Andy's Ancestors</h3>
+        </div>
+    </div>
+
+    <p><a href="index.html">← Return to Main Page</a></p>
+    <div class="footer">
+      <p>Moad Family Genealogy • Built for moad.net</p>
+    </div>
+  </body>
+</html>

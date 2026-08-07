@@ -3,94 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moad.net</title>
+    <title>Moad Family Genealogy</title>
     <style>
-        /* Basic CSS for styling */
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f4f4f4;
+            margin: 20px;
+            background-color: #fdf6e3;
         }
-        header {
-            background: #333;
-            color: #fff;
+        h1 {
+            color: #8b4c3e;
+        }
+	h2 {
+	    color: #8b4c3e;
+	}
+	h6 {
+	    color: #5c4a3c;
+	}
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 20px 0;
+        }
+        .gallery-item {
             text-align: center;
-            padding: 2rem;
+            max-width: 320px;
         }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        nav {
-            background: #444;
-            padding: 1rem;
-        }
-        nav a {
-            color: #fff;
+        .gallery-item a {
             text-decoration: none;
-            margin: 0 1rem;
-            font-size: 1.1rem;
         }
-        nav a:hover {
-            color: #ddd;
+        .gallery-item img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25),
+                        0 4px 8px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+        .gallery-item img:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3),
+                        0 6px 12px rgba(0, 0, 0, 0.2);
         }
-        section {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .gallery-item h3 {
+            margin: 12px 0 8px 0;
+            color: #5c3a1f;
+            font-size: 1.1em;
         }
-        footer {
+        .footer {
+            margin-top: 40px;
             text-align: center;
-            padding: 1rem;
-            background: #333;
-            color: #fff;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            nav a {
-                display: block;
-                margin: 0.5rem 0;
-            }
+            color: #5c4a3c;
+            font-size: 0.7em;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Moad.net</h1>
-        <p>Your Personal Space on the Web</p>
-    </header>
-
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Andy, and this is my personal website. I’m passionate about technology and business. This site is a place to share my projects, thoughts, and connect with others.</p>
-            <p>Feel free to explore and get in touch!</p>
-        </section>
+    <center>
+      <h1>Moad Family Genealogy</h1>
+      <h6><i>Husbands, love your wives, even as Christ also loved the church, and gave himself for it -</i> Ephesians 5:25</h6>
+    </center>
+    
+    <!-- First Row -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="burial-locations.html">
+                <img src="burial-locations.jpg" alt="Burial Locations" width="300" height="200">
+            </a>
+            <h3>Burial Locations</h3>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="families.html">
+                <img src="family.jpg" alt="Family" width="300" height="200">
+            </a>
+            <h3>Families</h3>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="ancestors.html">
+                <img src="ancestors.jpg" alt="Ancestors" width="300" height="200">
+            </a>
+            <h3>Ancestors</h3>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Moad.net. All rights reserved.</p>
-    </footer>
+    <!-- Second Row -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="historical-documents.html">
+                <img src="documents.jpg" alt="Documents" width="300" height="200">
+            </a>
+            <h3>Historical Documents</h3>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="photos.html">
+                <img src="photos.jpg" alt="Family Photos" width="300" height="200">
+            </a>
+            <h3>Family Photos</h3>
+        </div>
+	
+        <div class="gallery-item">
+            <a href="stories-notes.html">
+                <img src="stories-notes.jpg" alt="Stories and Notes" width="300" height="200">
+            </a>
+            <h3>Stories and Notes</h3>
+        </div>
+    </div>
+
+    <!-- Third Row -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <a href="military.html">
+                <img src="american-flag.jpg" alt="Military" width="300" height="200">
+            </a>
+            <h3>Military</h3>
+        </div>
+        
+        <div class="gallery-item">
+            <a href="individuals.html">
+                <img src="individules.jpg" alt="Individuals" width="300" height="200">
+            </a>
+            <h3>Individuals</h3>
+        </div>
+	
+        <div class="gallery-item">
+            <a href="immigrants.html">
+                <img src="immigrants.jpg" alt="Immigrants" width="300" height="200">
+            </a>
+            <h3>Immigrants</h3>
+        </div>
+    </div>
+    
+    <div class="footer">
+      <center>
+        <p style="max-width: 950px;"><b><i>This is the book of the generations of Adam. In the day that God created man, in the likeness of God made he him; Male and female created he them; and blessed them, and called their name Adam, in the day when they were created. And Adam lived an hundred and thirty years, and begat a son in his own likeness, and after his image; and called his name Seth: And the days of Adam after he had begotten Seth were eight hundred years: and he begat sons and daughters: And all the days that Adam lived were nine hundred and thirty years: and he died.</i> - Genesis 5:1-5</b></p>
+	</center>
+    </div>
 </body>
 </html>

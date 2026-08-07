@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burial Locations of Relatives of Angela Dawn (Schneider) Moad</title>
+  </head>
+  <style>
+    body {
+	margin: 20px;
+	background-color: #fdf6e3;
+    }
+    h1 {
+	color: #8b4c3e;
+    }
+    h2 {
+	color: #a04030;
+    }
+    h3 {
+	color: #6b3a2a;
+    }
+    h4 {
+	color: #5c3a1f;
+    }
+
+    .btn-row { display: flex; gap: 10px; margin-bottom: 1.5rem; }
+    .extra { color: var(--color-text-secondary); }
+  </style>
+  <script>
+    let yearsOn = false;
+    let relationOn = false;
+    
+    function toggleYears() {
+	yearsOn = !yearsOn;
+	document.querySelectorAll('li[data-birth]').forEach(li => {
+	    if (!li.dataset.birth && !li.dataset.death) return;
+	    let span = li.querySelector('.years');
+	    if (yearsOn) {
+		if (!span) {
+		    span = document.createElement('span');
+		    span.className = 'extra years';
+		    span.textContent = ' (' + li.dataset.birth + '–' + li.dataset.death + ')';
+		    const rel = li.querySelector('.relation');
+		    rel ? li.insertBefore(span, rel) : li.appendChild(span);
+		}
+		span.style.display = '';
+	    } else if (span) {
+		span.style.display = 'none';
+	    }
+	});
+    }
+    
+    function toggleRelation() {
+	relationOn = !relationOn;
+	document.querySelectorAll('li[data-relation]').forEach(li => {
+	    if (!li.dataset.relation) return;
+	    let span = li.querySelector('.relation');
+	    if (relationOn) {
+		if (!span) {
+		    span = document.createElement('span');
+		    span.className = 'extra relation';
+		    span.textContent = ' [' + li.dataset.relation + ']';
+		    li.appendChild(span);
+		}
+		span.style.display = '';
+	    } else if (span) {
+		span.style.display = 'none';
+	    }
+	});
+    }
+  </script>
+  <body>
+    <p><a href="burial-locations.html">← Return to Burial Locations</a></p>
+    
+    <h1>Angela Dawn (Schneider) Moad: Family Burial Locations</h1>
+    
+    <div class="btn-row">
+      <button onclick="toggleYears()"><i class="ti ti-calendar" aria-hidden="true"></i> Add birth &amp; death years</button>
+      <button onclick="toggleRelation()"><i class="ti ti-users" aria-hidden="true"></i> Add relationship</button>
+    </div>
+    
+    <div class="container">
+      <h2>Tupman Cemetery</h2>
+      <ol>
+      <li data-birth="1958" data-death="2011" data-relation="Mother"><a href="https://www.findagrave.com/memorial/71093934/sandra-lee-schneider">Sandra Lee (Schoettlin) Schneider</a></li>
+      <li data-birth="1904" data-death="1936" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/29621292/gerald_j-stinchfield">Gerald J Stinchfield</a></li>
+      <li data-birth="1881" data-death="1949" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/29621249/charles_walter-stinchfield">Charles Walter Stinchfield</a></li>
+      <li data-birth="1883" data-death="1942" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/29621497/mary-stinchfield">Mary (Taylor) Stinchfield</a></li>
+      <li data-birth="1906" data-death="1917" data-relation="Great-Granduncle"><a href="https://www.findagrave.com/memorial/143619771/washington-stinchfield">Washington Stinchfield</a></li>
+      <li data-birth="1903" data-death="1965" data-relation="Husband of Great-Grandaunt"><a href="https://www.findagrave.com/memorial/33195111/albert_e-roth">Albert E Roth</a></li>
+      <li data-birth="1909" data-death="1989" data-relation="Great-Grandaunt"><a href="https://www.findagrave.com/memorial/29621434/mary_alice-roth">Mary Alice (Stinchfield) Roth</a></li>
+      <li data-birth="1911" data-death="1971" data-relation="Great-Grandaunt"><a href="https://www.findagrave.com/memorial/29621342/mabel-diefenbaugh">Mabel (Stinchfield) Diefenbaugh</a></li>
+      <li data-birth="1844" data-death="1912" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/29621450/washington-stinchfield">Washington Stinchfield</a></li>
+      <li data-birth="1852" data-death="1893" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/31070204/mary_h-stinchfield">Mary Ann (Sanders) Stinchfield</a></li>
+      <li data-birth="1872" data-death="1873" data-relation="2nd Great-Granduncle"><a href="https://www.findagrave.com/memorial/143619732/george-stinchfield">George Stinchfield</a></li>
+      <li data-birth="1877" data-death="1880" data-relation="2nd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/31069965/harriet-stinchfield">Harriet Stinchfield</a></li>
+      <li data-birth="1907" data-death="1952" data-relation="Wife of 2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/29621172/virginia-stinchfield">Virginia (Glenn) Stinchfield</a></li>
+      <li data-birth="1822" data-death="1900" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/31069736/sarah_a-stinchfield">Sarah Ann (McCrary) Stinchfield</a></li>
+      <li data-birth="1842" data-death="1921" data-relation="3rd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/30234833/letitia-smith">Letitia (Stinchfield) Smith</a></li>
+      <li data-birth="1852" data-death="1934" data-relation="3rd Great-Granduncle"><a href="https://www.findagrave.com/memorial/18929023/mose-stinchfield">Mose Stinchfield</a></li>
+      <li data-birth="1790" data-death="1886" data-relation="Wife of 5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/143621168/mary_ann-stinchfield">Mary Ann Stinchfield</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Alexander Memorial Park Cemetery</h2>
+    <ol>
+      <li data-birth="1915" data-death="1996" data-relation="Grandfather"><a href="https://www.findagrave.com/memorial/111308085/melvin_john-schoettlin">Melvin John Schoettlin</a></li>
+      <li data-birth="1921" data-death="2013" data-relation="Grandmother"><a href="https://www.findagrave.com/memorial/111305292/dorothy_lee-schoettlin">Dorothy Lee (Stinchfield) Schoettlin</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Locust Hill Cemetery</h2>
+    <ol>
+      <li data-birth="1889" data-death="1971" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/111308254/adam-schoettlin">Adam Edward Schoettlin</a></li>
+      <li data-birth="1887" data-death="1980" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/111308279/amelia_c-schoettlin">Amelia Charlotte (Haaga) Schoettlin</a></li>
+      <li data-birth="1918" data-death="1926" data-relation="Greataunt"><a href="https://www.findagrave.com/memorial/111308478/beverly_a-schoettlin">Beverly Alma Schoettlin</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Oak Hill Cemetery</h2>
+    <ol>
+      <li data-birth="1904" data-death="1977" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/111309064/mildred-moredock">Mildred (Lowery) Stinchfield Moredock</a></li>
+      <li data-birth="1903" data-death="1972" data-relation="Husband of Great-Grandmother"><a href="https://www.findagrave.com/memorial/111309102/wallace_maurice-moredock">Wallace Maurice Moredock</a></li>
+      <li data-birth="1855" data-death="1942" data-relation="Wife of 3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/91963196/alice-stinchfield">Alice (Rheinlander) Stinchfield</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>St. Joseph Catholic Cemetery</h2>
+    <ol>
+      <li data-birth="1783" data-death="1852" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/14559577/daniel-stinchfield">Daniel Stinchfield</a></li>
+      <li data-birth="1799" data-death="1848" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/14559592/roxana-stinchfield">Roxana (Judkins) Stinchfield</a></li>
+    </ol>
+  </div>
+ 
+
+  <div class="container">
+    <h2>Union Cemetery - Leesburg, Loudoun County, Virginia, USA</h2>
+    <ol>
+      <li data-birth="1939" data-death="2020" data-relation="Aunt"><a href="https://www.findagrave.com/memorial/210372453/patricia_sue-fongheiser">Patricia Sue (Schoettlin) Fongheiser</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Lost at Sea</h2>
+    <ol>
+      <li data-birth="1824" data-death="1857" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/95086074/hiram-stinchfield">Hiram Stinchfield</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Grand Island Cemetery - Grimes, Colusa County, California, USA</h2>
+    <ol>
+      <li data-birth="1829" data-death="1903" data-relation="4th Great-Granduncle"><a href="https://www.findagrave.com/memorial/23941742/george_a-stinchfield">George A Stinchfield</a></li>
+      <li data-birth="1832" data-death="1906" data-relation="4th Great-Granduncle"><a href="https://www.findagrave.com/memorial/23941538/moses-stinchfield">Moses Stinchfield</a></li>
+    </ol>
+  </div>
+  
+  
+  <div class="container">
+    <h2>Barrett Cemetery - Stendal, Pike County, Indiana, USA</h2>
+    <ol>
+      <li data-birth="1835" data-death="1880" data-relation="4th Great-Grandaunt"><a href="https://www.findagrave.com/memorial/34847141/harriet-henning">Harriet (Stinchfield) Henning</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Plainview Memorial Cemetery</h2>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Old Boonville Cemetery</h2>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>German Ridge Cemetery</h2>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  
+  <div class="container">
+    <h2>Lawrenceville City Cemetery</h2>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Cremated</h2>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+    <p><a href="burial-locations.html">← Return to Burial Locations</a></p>
+</body>
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burial Locations of Relatives of Andrew James Moad</title>
+  </head>
+  <style>
+    body {
+	margin: 20px;
+	background-color: #fdf6e3;
+    }
+    h1 {
+	color: #8b4c3e;
+    }
+    h2 {
+	color: #a04030;
+    }
+    h3 {
+	color: #6b3a2a;
+    }
+    h4 {
+	color: #5c3a1f;
+    }
+    .btn-row { display: flex; gap: 10px; margin-bottom: 1.5rem; }
+    .extra { color: var(--color-text-secondary); }
+  </style>
+  <script>
+    let yearsOn = false;
+    let relationOn = false;
+    
+    function toggleYears() {
+	yearsOn = !yearsOn;
+	document.querySelectorAll('li[data-birth]').forEach(li => {
+	    if (!li.dataset.birth && !li.dataset.death) return;
+	    let span = li.querySelector('.years');
+	    if (yearsOn) {
+		if (!span) {
+		    span = document.createElement('span');
+		    span.className = 'extra years';
+		    span.textContent = ' (' + li.dataset.birth + '–' + li.dataset.death + ')';
+		    const rel = li.querySelector('.relation');
+		    rel ? li.insertBefore(span, rel) : li.appendChild(span);
+		}
+		span.style.display = '';
+	    } else if (span) {
+		span.style.display = 'none';
+	    }
+	});
+    }
+    
+    function toggleRelation() {
+	relationOn = !relationOn;
+	document.querySelectorAll('li[data-relation]').forEach(li => {
+	    if (!li.dataset.relation) return;
+	    let span = li.querySelector('.relation');
+	    if (relationOn) {
+		if (!span) {
+		    span = document.createElement('span');
+		    span.className = 'extra relation';
+		    span.textContent = ' [' + li.dataset.relation + ']';
+		    li.appendChild(span);
+		}
+		span.style.display = '';
+	    } else if (span) {
+		span.style.display = 'none';
+	    }
+	});
+    }
+  </script>
+  <body>
+    <p><a href="burial-locations.html">← Return to Burial Locations</a></p>
+    
+    <h1>Andrew James Moad: Family Burial Locations</h1>
+    
+    <div class="btn-row">
+      <button onclick="toggleYears()"><i class="ti ti-calendar" aria-hidden="true"></i> Add birth &amp; death years</button>
+      <button onclick="toggleRelation()"><i class="ti ti-users" aria-hidden="true"></i> Add relationship</button>
+    </div>
+    
+    <div class="container">
+      <h2>St. Paul's United Church of Christ Cemetery<i><a href="https://maps.app.goo.gl/23yr6sh4ACHmyNTn6"> in German Township, Vanderburgh County, Indiana, USA</a></i></h2>
+      <h3>Family of Jane Moad (Mom's Side)</h3>
+      <ol>
+	<li data-birth="1931" data-death="2021" data-relation="1st Cousin 2x Removed"><a href="https://www.findagrave.com/memorial/234638675/jean_freida-carter">Jean Freida (Goebel) Carter</a></li>
+	<li data-birth="1967" data-death="2006" data-relation="1st Cousin 1x Removed"><a href="https://www.findagrave.com/memorial/14230548/bolyn_james-conaway">Bolyn James Conaway</a></li>
+	<li data-birth="1902" data-death="2001" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/32488269/amanda_anna-mohr">Amanda Anna (Haas) Mohr</a></li>
+	<li data-birth="1935" data-death="1983" data-relation="Greataunt"><a href="https://www.findagrave.com/memorial/32504205/rosemary-conaway">Rosemary (Mohr) Conaway</a></li>
+	<li data-birth="1910" data-death="1983" data-relation="Great-Greataunt"><a href="https://www.findagrave.com/memorial/78427225/luella_hulda-haas">Luella Hulda Haas</a></li>
+	<li data-birth="1880" data-death="1973" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/64753634/matilda_dorthea-haas">Matilda Dorthea "Tillie" (Roeder) Haas</a></li>
+	<li data-birth="1901" data-death="1971" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/32488254/daniel_william-mohr">Daniel William Mohr</a></li>
+	<li data-birth="1905" data-death="1969" data-relation="Great-Granduncle"><a href="https://www.findagrave.com/memorial/32496494/clarence_henry-goebel">Clarence Henry Goebel</a></li>
+	<li data-birth="1955" data-death="1961" data-relation="Aunt"><a href="https://www.findagrave.com/memorial/32488235/terri_eileen-mohr">Terri Eileen Mohr</a></li>
+	<li data-birth="1930" data-death="1961" data-relation="Grandfather"><a href="https://www.findagrave.com/memorial/32488232/james-hass-mohr">James Hass Mohr</a></li>
+	<li data-birth="1931" data-death="1961" data-relation="Grandmother"><a href="https://www.findagrave.com/memorial/32488225/arlene_florence-mohr">Arlene Florence (Barchet) Mohr</a></li>
+	<li data-birth="1905" data-death="1961" data-relation="Great-Grandaunt"><a href="https://www.findagrave.com/memorial/32496954/florence-goebel">Florence (Mohr) Goebel</a></li>
+	<li data-birth="1869" data-death="1960" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/64753395/louis_a-haas">Louis A. Haas</a></li>
+	<li data-birth="1873" data-death="1956" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/32488098/rosa-mohr">Rosa (Bumb) Mohr</a></li>
+	<li data-birth="1865" data-death="1948" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/32488062/john_barkley-mohr">John Barkley Mohr</a></li> 
+      <li data-birth="1846" data-death="1932" data-relation="3rd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/64752715/catharine-schussler">Catharine (Gartner) Schussler</a></li>
+      <li data-birth="1837" data-death="1911" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/64747527/margaretha-roeder">Margaretha (Schuessler) Roeder</a></li>
+      <li data-birth="1840" data-death="1907" data-relation="3rd Great-Granduncle"><a href="https://www.findagrave.com/memorial/64752702/john_friedrich-schussler">John Friedrich Schussler</a></li>
+      <li data-birth="1832" data-death="1903" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/64747516/friedrich-roeder">Friedrich "Fritz" Roeder</a></li>
+      <li data-birth="1857" data-death="1892" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/64746725/margaretha-maasberg">Margaretha (Goebel) Maasberg</a></li>
+      <li data-birth="1798" data-death="1871" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/64744711/christoph-goebel">Christoph Goebel</a></li>
+      <li data-birth="1792" data-death="1870" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/64744800/johannes-schuessler">Johannes Schessler</a></li>
+      <li data-birth="1794" data-death="1869" data-relation="4th Step Great-Grandfather"><a href="https://www.findagrave.com/memorial/64744823/cornelius-battles">Cornelius Battles</a></li>
+      <li data-birth="1801" data-death="1862" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/64745131/eva_elisabeth-goebel">Eva Elisabeth (Hess) Goebel</a></li>
+      <li data-birth="1800" data-death="1859" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/254036374/mary-battles">Mary Ruder Battles</a></li>
+    </ol>
+    <h3>Family of William Moad (Dad's Side)</h3>
+    <ol>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Alexander Memorial Park Cemetery<i><a href="https://maps.app.goo.gl/nFyQasYvGYjaaJxGA"> in Evansville, Vanderburgh County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1906" data-death="1977" data-relation="Great-Granduncle"><a href="https://www.findagrave.com/memorial/112292898/oliver-haas">Oliver Haas</a></li>
+      <li data-birth="1910" data-death="1989" data-relation="Great-Grandaunt"><a href="https://www.findagrave.com/memorial/112292858/evelyn-haas">Evelyn (Loeffler) Haas</a></li>
+      <li data-birth="1882" data-death="1950" data-relation="2nd Great-Granduncle"><a href="https://www.findagrave.com/memorial/96959347/louis_m-loeffler">Louis M. Loeffler</a></li>
+      <li data-birth="1882" data-death="1964" data-relation="2nd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/229805908/edith-loeffler">Edith (Mohr) Loeffler</a></li>
+      <li data-birth="1908" data-death="1981" data-relation="1st Cousin 3x Removed"><a href="https://www.findagrave.com/memorial/80913685/earl_louis-loeffler">Earl Louis Loeffler</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Park Lawn Cemetery and Mausoleum<i><a href="https://maps.app.goo.gl/CNqpJ1EpqMsNm3JX8"> in Evansville, Vanderburgh County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1904" data-death="1978" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/73177499/arthur_henry-barchet">Arthur Henry Barchet</a></li>
+      <li data-birth="1905" data-death="1973" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/73177513/helene-barchet">Helene (Lauer) Barchet</a></li>
+      <li data-birth="1877" data-death="1945" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/73177488/william-barchet">William Barchet</a></li>
+      <li data-birth="1881" data-death="1974" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/73177478/sophia-barchet">Sophia (Maasberg) Barchet</a></li>
+      <li data-birth="1876" data-death="1949" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/82076077/noah-lee-bivens">Noah Lee Bivens</a></li>
+      <li data-birth="1878" data-death="1950" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/82076069/rebecca_e-bivens">Rebecca E. (Vanover) Bivens</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Lutheran Cemetery<i><a href="https://maps.app.goo.gl/2KW1Ec4oLUcYF1Z9A"> in Evansville, Vanderburgh County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1856" data-death="1913" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/38426190/henry_ferdinand-maasberg">Henry Ferdinand Maasberg</a></li>
+      <li data-birth="1829" data-death="1876" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/89652861/henry_m-maasberg">Henry M. Maasberg</a></li>
+      <li data-birth="1841" data-death="1918" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/89652833/elizabeth_m-maasberg">Elizabeth M Maasberg</a></li>
+    </ol>
+  </div>
+  
+  <div class="container">
+    <h2>Oak Hill Cemetery<i><a href="https://maps.app.goo.gl/SEUPB8iHmsYpevHX8"> in Evansville, Vanderburgh County, Indiana, USA</a></i></h2>
+    <h3>Family of Jane Moad</h3>
+    <ol>
+      <li data-birth="1869" data-death="1942" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/94896726/charles_j-lauer">Charles J Lauer</a></li>
+      <li data-birth="1876" data-death="1955" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/94897017/emma_augusta-lauer">Emma Augusta (Niemeier) Lauer</a></li>
+      <li data-birth="1828" data-death="1901" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/78814049/henry-goebel">Henry Goebel</a></li>
+      <li data-birth="1835" data-death="1914" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/78814083/sophia-goebel">Sophia (Bauer) Goebel</a></li>
+      <li data-birth="1801" data-death="1882" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/96114183/john_adam-bauer">John Adam Bauer</a></li>
+      <li data-birth="1810" data-death="1883" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/96114185/maria-bauer">Maria (Heller) Bauer</a></li>
+      <li data-birth="1822" data-death="1891" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/96061753/christina_sophia-hoge">Christina Sophia (Storck) Hoge</a></li>
+    </ol>
+    <h3>Family of William Moad</h3>
+    <ol>
+      <li data-birth="1888" data-death="1955" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/117108931/hardin_suttser-moad">Hardin Suttser Moad</a></li>
+      <li data-birth="1892" data-death="1957" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/117108930/jennie_v-moad">Jennie Viola (Cook) Moad</a></li>
+      <li data-birth="1858" data-death="1925" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/124800988/andrew-charles-cook">Charles Andrew Cook</a></li>
+      <li data-birth="1859" data-death="1929" data-relation="2nd-Great-Grandmother"><a href="https://www.findagrave.com/memorial/124880371/henretta-cook">Henretta “Retta” (Bentley) Cook</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Locust Hill Cemetery<i><a href="https://maps.app.goo.gl/ztYE9AW1LzQWtjGD7"> in Evansville, Vanderburgh County, Indiana, USA</a></i></h2>
+    <h3>Family of Jane Moad</h3>
+    <ol>
+      <li data-birth="1841" data-death="1926" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/81612872/george-barchet">George Barchet</a></li>
+      <li data-birth="1848" data-death="1940" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/81613079/margaret-barchet">Margaret (Deutsch) Barchet</a></li>
+      <li data-birth="1810" data-death="1872" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/84395154/martin-barchet">Martin Barchet</a></li>
+      <li data-birth="1807" data-death="1875" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/84628916/catherine-barchet">Catherine (Weiler) Barchet</a></li>
+      <li data-birth="1848" data-death="1914" data-relation="3rd Great-Granduncle"><a href="https://www.findagrave.com/memorial/103708070/adam-barchet">Adam Barchet</a></li>
+      <li data-birth="1821" data-death="1888" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/105142958/peter-deutsch">Peter Deutsch</a></li>
+      <li data-birth="1821" data-death="1900" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/105142990/susanna-deutsch">Susanna (Schneider) Deutsch</a></li>
+      <li data-birth="1851" data-death="1908" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/125191755/sophia_e-koehler">Sophia E. (Hoge) Koehler</a></li>
+      <li data-birth="Abt.1845" data-death="1885" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/127171135/jacob-mohr">Jacob Mohr</a></li>
+      <li data-birth="1840" data-death="1922" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/129739236/mary-mohr">Mary (Scheiner) Mohr</a></li>
+      <li data-birth="1881" data-death="1941" data-relation="2nd Great-Granduncle"><a href="https://www.findagrave.com/memorial/103708085/albert-a-barchet">Albert A. Barchet</a></li>
+      <li data-birth="1884" data-death="1970" data-relation="wife of 2nd Great-Granduncle"><a href="https://www.findagrave.com/memorial/103708381/margaret-barchet">Margaret “Maggie” (Kissinger) Barchet</a></li>
+      <li data-birth="1860" data-death="1910" data-relation="2nd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/105142981/rachel-deutsch">Rachel (Reinert/Mohr) Deutsch</a></li>
+      <li data-birth="1865" data-death="1904" data-relation="2nd Great-Granduncle"><a href="https://www.findagrave.com/memorial/102277122/george-reinert">George Reinert</a></li>
+      <li data-birth="1849" data-death="1894" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/105140446/henry-bumb">Henry Bumb</a></li>
+      <li data-birth="1855" data-death="1898" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/105140590/mary-bumb">Mary (Deutsch) Bumb</a></li>
+      <li data-birth="1808" data-death="1876" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/84364247/john-bumb">John Bumb</a></li>
+      <li data-birth="1817" data-death="1892" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/105140403/elisabeth_eva-bumb">Elisabeth Eva (Hollerbach) Bumb</a></li>
+    </ol>
+    <h3>Family of William Moad</h3>
+    <ol>
+      <li data-birth="1929" data-death="1972" data-relation="Grandfather"><a href="https://www.findagrave.com/memorial/136008109/walter_h-moad">Walter Harden Moad</a></li>
+      <li data-birth="1938" data-death="1918" data-relation="Grandmother"><a href="https://www.findagrave.com/memorial/194798769/ruby_maxine-nurrenber"n>Ruby Maxine (Bivens) Moad Nurrenbern</a></li>
+      <li data-birth="1900" data-death="1949" data-relation="Great-Grandfather"><a href="https://www.findagrave.com/memorial/90298292/truman_w-bivens">William Truman Bivens</a></li>
+      <li data-birth="1902" data-death="1964" data-relation="Great-Grandmother"><a href="https://www.findagrave.com/memorial/90298354/marjorie-bivens">Marjorie Corinne (Stormont) Bivens</a></li>
+      <li data-birth="1872" data-death="1956" data-relation="2nd Great-Grandfather"><a href="https://www.findagrave.com/memorial/130246160/george-riley-stormont">George Riley Stormont</a></li>
+      <li data-birth="1874" data-death="1953" data-relation="2nd Great-Grandmother"><a href="https://www.findagrave.com/memorial/130246204/ella_b-stormont">Ella Bell (Hyslop) Stormont</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Saint Peters United Church of Christ Cemetery<i><a href="https://maps.app.goo.gl/LriySXBy3UNAuSS96"> in Wadesville, Posey County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1839" data-death="1899" data-relation="3rd Great-Grandaunt"><a href="https://www.findagrave.com/memorial/8110616/katherina-schafer">Katherina (Barchet) Schafer</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Plainview Memorial Cemetery<i><a href="https://maps.app.goo.gl/wQuvMArWgh669ASd8"> in Boonville, Warrick County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1840" data-death="1901" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/36236707/ludwig-haas">Ludwig Haas</a></li>
+      <li data-birth="1842" data-death="1915" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/36236766/magdalena-haas">Magdalena (Maurer) Haas</a></li>
+      <li data-birth="1806" data-death="1889" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/34352566/johann_carl-haas">Johann Carl Haas</a></li>
+      <li data-birth="1813" data-death="1860" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/129768496/charlotta_louise-haas">Charlotta Louise (Jost) Haas</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Old Boonville Cemetery<i><a href="https://maps.app.goo.gl/YoxZy293hEg9NoG89"> in Boonville, Warrick County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1816" data-death="1865" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/46603461/johann_adam-maurer">Johann Adam Maurer</a></li>
+      <li data-birth="1816" data-death="1868" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/46603443/dorothea-maurer">Dorothea (Pflug) Maurer</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>German Ridge Cemetery<i><a href="https://maps.app.goo.gl/sJA7vVWZBnQzWpqz9"> in Tobin Township, Perry County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1827" data-death="1898" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/84138421/peter_nicholas-lauer">Peter Nicholas Lauer</a></li>
+      <li data-birth="1838" data-death="1901" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/84155773/susanna_louisa-lauer">Susanna Louisa (Dick) Lauer</a></li>
+    </ol>
+  </div>
+
+  
+  <div class="container">
+    <h2>Lawrenceville City Cemetery<i><a href="https://maps.app.goo.gl/SESo5bBqZWXVyyp79"> in Lawrenceville, Lawrence County, Illinois, USA</a></i></h2>
+    <ol>
+      <li data-birth="1932" data-death="1998" data-relation="Greataunt"><a href="https://www.findagrave.com/memorial/14984547/ruth_evelyn-herrel">Ruth Evelyn (Barchet) Herrel</a></li>
+      <li data-birth="1933" data-death="1990" data-relation="Greatuncle"><a href="https://www.findagrave.com/memorial/14984544/william_gustav-herrel">William Gustav "Bill" Herrel Jr.</a></li>
+      <li data-birth="1955" data-death="2015" data-relation="1st Cousin 1x Removed"><a href="https://www.findagrave.com/memorial/147531218/jennifer_l-grove">Jennifer L. "Jenny" (Herrel) Grove</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Clay Cemetery<i><a href="https://maps.app.goo.gl/1KB4JiW5T5TDpfSL7"> in Henderson County, Kentucky, USA</a></i></h2>
+    <ol>
+      <li data-birth="1814" data-death="1871" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/73252102/john_j-bentley">John J. Bentley</a></li>
+      <li data-birth="1832" data-death="1880" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/155399560/sarah_j-bentley">Sarah Jane (Carrington) Bentley</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Smith Mills Cemetery<i><a href="https://maps.app.goo.gl/fK9LtBJgutMTLCpv9"> in Smith Mills, Henderson County, Kentucky, USA</a></i></h2>
+    <ol>
+      <li data-birth="1828" data-death="1900" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/99392993/andrew-jackson-cook">Andrew Jackson Cook</a></li>
+      <li data-birth="1826" data-death="1906" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/11619246/harriet-cook">Harriet (Beard) Cook</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Green Lawn Cemetery<i><a href="https://maps.app.goo.gl/mjmE3zAYPxsYqgSi9"> in Columbus, Franklin County, Ohio, USA</a></i></h2>
+    <ol>
+      <li data-birth="1834" data-death="1865" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/13739041/andrew-renert">Andrew Reinhardt</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Mount Zion Methodist Episcopal Church Cemetery<i><a href="https://maps.app.goo.gl/gxQGjJqUEiSekjrt8"> in Panther, Daviess County, Kentucky, USA</a></i></h2>
+    <ol>
+      <li data-birth="1846" data-death="1913" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/64753719/wheeler_h-bivins">Wheeler H. Bivins</a></li>
+      <li data-birth="1846" data-death="1901" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/64753741/louisa_a-bivins">Louisa A. (Davis) Bivins</a></li>
+      <li data-birth="1843" data-death="1913" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/64752752/william_samuel-vanover">William Samuel Vanover</a></li>
+      <li data-birth="1847" data-death="1908" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/64752772/martha_lucy-vanover">Martha Lucy (Waltrip) Vanover</a></li>
+
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Brushy Fork Cemetery<i><a href="https://maps.app.goo.gl/56QHWVN6a6yiTNbX6"> in Panther, Daviess County, Kentucky, USA</a></i></h2>
+    <ol>
+      <li data-birth="1811" data-death="1876" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/31226197/samuel-vanover">Samuel Thomas Vanover</a></li>
+      <li data-birth="1813" data-death="1889" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/31226222/rebecca-vanover">Rebecca (Haas) Vanover</a></li>
+      <li data-birth="1775" data-death="1850" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/26662565/henry_lewis-vanover">Henry Lewis Vanover</a></li>
+      <li data-birth="1775" data-death="1840" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/220429387/martha-vanover">Martha (Bandy) Vanover</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Mount Liberty Baptist Church Cemetery<i><a href="https://maps.app.goo.gl/3nhjqj7cjoBVz9Hu7"> in Wyman, McLean County, Kentucky, USA</a></i></h2>
+    <ol>
+      <li data-birth="1814" data-death="1903" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/37407344/lucy-waltrip">Lucy (Wall) Waltrip</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Archer Cemetery<i><a href="https://maps.app.goo.gl/sLyf9WF3SnhZSc8n7"> in Princeton, Gibson County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1839" data-death="1903" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/18141466/william_henry-stormont">William Henry Stormont</a></li>	    
+      <li data-birth="1845" data-death="1911" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/18141017/mary_jane-stormont">Mary Jane (Hogue) Stormont</a></li>	    
+      <li data-birth="1818" data-death="1897" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/140237792/annis-hogue">Annis (Delavan) Hogue</a></li>	    
+      <li data-birth="1821" data-death="1901" data-relation="3rd Great-Grandfather"><a href="https://www.findagrave.com/memorial/18008373/andrew-hyslop">Andrew Hyslop</a></li>
+      <li data-birth="1833" data-death="1910" data-relation="3rd Great-Grandmother"><a href="https://www.findagrave.com/memorial/18008402/margaret-hyslop">Margaret (Boyd) Hyslop</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Massies Creek Cemetery<i><a href="https://maps.app.goo.gl/kcGqAx9kzAFCxKeY9"> in Cedarville, Greene County, Ohio, USA</a></i></h2>
+    <ol>
+      <li data-birth="1806" data-death="1861" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/96011103/john-stormont">John Stormont</a></li>
+      <li data-birth="1812" data-death="1850" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/96011181/esther-stormont">Esther (McMillan) Stormont</a></li>
+      <li data-birth="1782" data-death="1874" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/96719530/john-mcmillan">John McMillan</a></li>
+      <li data-birth="1791" data-death="1860" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/96719718/martha-mcmillan">Martha (Chestnut) McMillan</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Hickory Point Cemetery<i><a href="https://maps.app.goo.gl/WEw5XBLVhaZxo7GC7"> in Warren County, Illinois, USA</a></i></h2>
+    <ol>
+      <li data-birth="1809" data-death="1887" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/13724996/john_anderson-hogue">John Anderson Hogue</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Lawrence Cemetery<i><a href="https://maps.app.goo.gl/E1Z8hCz7wa94Fgs28"> in Francisco, Gibson County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1778" data-death="1862" data-relation="5th Great-Grandfather"><a href="https://www.findagrave.com/memorial/35639708/james-stormont">James Stormont</a></li>
+      <li data-birth="1781" data-death="1862" data-relation="5th Great-Grandmother"><a href="https://www.findagrave.com/memorial/35639730/jane-stormont">Jane (Sprowl) Stormont</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Old Covenanter Cemetery<i><a href=""> in Chester, Chester County, South Carolina, USA</a></i></h2>
+    <ol>
+      <li data-birth="1751" data-death="1818" data-relation="6th Great-Grandfather"><a href="https://www.findagrave.com/memorial/55387937/hugh-mcmillan">Hugh McMillan</a></li>
+      <li data-birth="1750" data-death="1825" data-relation="6th Great-Grandmother"><a href="https://www.findagrave.com/memorial/55387960/jane-mcmillan">Jane (Harvey) McMillan</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Moffatt-Strong-McDill Cemetery<i><a href="https://maps.app.goo.gl/YvYGHX2Kasra2G5u7"> in Chester, Chester County, South Carolina, USA </a></i></h2>
+    <ol>
+      <li data-birth="1752" data-death="1822" data-relation="6th Great-Grandfather"><a href="https://www.findagrave.com/memorial/55349203/james-chestnut">COL James Chestnut</a></li>
+      <li data-birth="1753" data-death="1821" data-relation="6th Great-Grandmother"><a href="https://www.findagrave.com/memorial/55349188/esther-chestnut">Esther (Stormont) Chestnut</a></li>
+      <li data-birth="1713" data-death="1779" data-relation="7th Great-Grandfather"><a href="https://www.findagrave.com/memorial/39888689/david_aka_alexander-chestnut">David Alexander Chestnut</a></li>
+      <li data-birth="1726" data-death="1779" data-relation="7th Great-Grandmother"><a href="https://www.findagrave.com/memorial/149545576/jennett-chestnut">Jennett “Jennet” (Brown) Chestnut</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Catholic Presbyterian Church Cemetery<i><a href="https://maps.app.goo.gl/9eCTvPB8Sx9QVSM77"> in Blackstock, Chester County, South Carolina, USA</a></i></h2>
+    <ol>
+      <li data-birth="1725" data-death="1790" data-relation="7th Great-Grandfather"><a href="https://www.findagrave.com/memorial/86918372/samuel-storment">Samuel Stormont</a></li>
+      <li data-birth="1720" data-death="1790" data-relation="7th Great-Grandmother"><a href="https://www.findagrave.com/memorial/235682175/martha-storment">Martha Stormont</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>St. Boniface Cemetery<i><a href="https://maps.app.goo.gl/JaMMk5qi9gVsagGc6"> in Fulda, Spencer County, Indiana, USA</a></i></h2>
+    <ol>
+      <li data-birth="1798" data-death="1881" data-relation="4th Great-Grandfather"><a href="https://www.findagrave.com/memorial/101705670/peter-rinnert">Peter Rinnert</a></li>
+      <li data-birth="1806" data-death="1863" data-relation="4th Great-Grandmother"><a href="https://www.findagrave.com/memorial/101705669/katharina-rinnert">Katharina Rinnert</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Flatbush Reformed Dutch Church Cemetery<i><a href="https://maps.app.goo.gl/BZja42Fn3YUXiAzU6"> in Flatbush, Kings County, New York, USA</a></i></h2>
+    <ol>
+      <li data-birth="1640" data-death="1691" data-relation="9th Great-Grandfather"><a href="https://www.findagrave.com/memorial/68196110/cornelius-van_hovgem">Cornelius “Vanover” Van Hovgem I</a></li>
+      <li data-birth="1648" data-death="1693" data-relation="9th Great-Grandmother"><a href="https://www.findagrave.com/memorial/241748696/maria-van_hovgem">Maria (Van Winterswyck) Van Hovgem</a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Cremated</h2>
+    <ol>
+      <li data-birth="1957" data-death="2011" data-relation="1st Cousin 1x Removed"><a href="https://www.findagrave.com/memorial/94129996/sam-herrel">Sam Herrel</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+
+  <div class="container">
+    <h2>Burial Details Unknown, but still on Find-A-Grave</h2>
+    <ol>
+      <li data-birth="1739" data-death="1818" data-relation="6th Great-Grandfather"><a href="https://www.findagrave.com/memorial/65927641/cornelius-vanover">Cornelius Vanover IV</a></li>
+      <li data-birth="1716" data-death="1770" data-relation="7th Great-Grandfather"><a href="https://www.findagrave.com/memorial/65928284/cornelius-vanover">Cornelius Vanover III</a></li>
+      <li data-birth="1714" data-death="1761" data-relation="7th Great-Grandmother"><a href="https://www.findagrave.com/memorial/77776139/marretje-vanover">Marretje “Maria” (Buijs) Vanover</a></li>
+      <li data-birth="1670" data-death="1720" data-relation="8th Great-Grandfather"><a href="https://www.findagrave.com/memorial/65928664/cornelius-vanover">Cornelius “Van Hovgem” Vanover II</a></li>
+      <li data-birth="1697" data-death="1720" data-relation="8th Great-Grandmother"><a href="https://www.findagrave.com/memorial/84135206/styntje-vanover">Styntje “Christina” (Hendricksen) Vanover</a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+      <li data-birth="" data-death="" data-relation=""><a href=""></a></li>
+    </ol>
+  </div>
+    <p><a href="burial-locations.html">← Return to Burial Locations</a></p>
+</body>
+</html>
